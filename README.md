@@ -1,9 +1,12 @@
 # PROJECT
 
-1.Mini Project
+## Mini Project
 
-- background color changer
+- Background Color Changer
+- Letter Counter
 
-  2.Toy Project
+## Toy Project
 
 - Simple Responsive Navbar
+- Landing Page
+- Simple-login-form-with-image
