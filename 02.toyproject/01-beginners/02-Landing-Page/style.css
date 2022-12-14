@@ -2,6 +2,8 @@
 :root {
   /* color */
   --color-white: #ffffff;
+  --color-pink: #eebed3;
+  --color-yellow: #f5dd56;
   --color-blue: #0171bb;
   --color-black: #000000;
 
@@ -15,40 +17,51 @@
   --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-regular: 400;
+
+  /* size */
+  --border-radius: 15px;
 }
 
-/* Universal Setting */
+/* Universal tags */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+}
+li {
+  list-style: none;
 }
 
 #navbar {
-  background: transparent;
+  background-color: var(--color-pink);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
-  position: relative;
-  top: 0;
 }
-
-.nav__logo {
-  width: 100px;
-  height: 50px;
-}
-
-.nav__social_menu {
+.nav__menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 20px;
 }
-.nav__social_menu i {
-  width: 20px;
-  height: 20px;
-  margin: 0 10px;
+.nav__menu_item {
+  padding: 0 25px;
+}
+.nav__menu_item_contact {
+  width: 100px;
+  height: 30px;
 
-  color: var(--color-blue);
+  border: 1px solid var(--color-black);
+  border-radius: var(--border-radius);
+  background-color: var(--color-yellow);
 }
