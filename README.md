@@ -2,15 +2,11 @@
 
 ## **Mini Project**
 
----
-
 - Background Color Changer ✔️
 - Letter Counter
 - Form with html,css ✔️
 
 ## **Toy Project**
-
----
 
 ### beginners
 
