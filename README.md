@@ -1,10 +1,12 @@
-# PROJECT
+<center>
+<h1><b>PROJECT ✔️</b></h1>
+</center>
 
 ## **Mini Project**
 
 - Background Color Changer ✔️
 - Letter Counter
-- Form with html,css ✔️
+- Form with HTML,CSS ✔️
 
 ## **Toy Project**
 
@@ -12,10 +14,10 @@
 
 - Simple Responsive Navbar ✔️
 - Landing Page
-- Simple login form with image ✔️
+- Simple Login Form with Image ✔️
 - Countdown Timer ✔️
-- Quiz website
-- Static website
+- Quiz Website
+- Static Website
 - Webpage Including form
 
 ### Intermediate
@@ -29,4 +31,4 @@
 
 ### Expert
 
-- Dash board
+- Dash Board
