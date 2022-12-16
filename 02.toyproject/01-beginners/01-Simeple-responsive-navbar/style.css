@@ -2,6 +2,7 @@
   --color-white: #ffffff;
   --color-light-pink: #f0c7c1;
   --color-dark-pink: #ff6863;
+  --color-skyblue: #98bcf9;
   --color-blue: #2da6eb;
   --color-dark-navy: #344564;
   --color-black: #000000;
@@ -15,7 +16,7 @@
 
   /* Font weight */
   --weight-bold: 700;
-  --weight-semi-bold: 600;
+  --weight-semi-bold: 500;
   --weight-regular: 400;
 }
 
@@ -39,7 +40,7 @@ li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-blue);
+  background-color: var(--color-skyblue);
   padding: 16px;
 }
 
@@ -81,6 +82,7 @@ li {
   .nav__menu {
     flex-direction: column;
     text-align: center;
+    display: none;
   }
   .nav__menu_item {
     margin: 5px 0;
