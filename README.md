@@ -15,8 +15,8 @@
 - Simple login form with image ✔️
 - Countdown Timer ✔️
 - Quiz website
-- static website
-- webpage Including form
+- Static website
+- Webpage Including form
 
 ### Intermediate
 
