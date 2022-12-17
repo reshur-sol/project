@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Background Color Changer" />
     <meta name="author" content="RESHUR" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>::BACKGROUND COLOR CHANGER::</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
   </head>
   <body>
-    <section class="container">
+    <section id="container">
       <div class="title">
         <h1 class="container__title">BACKGROUND COLOR CHANGER</h1>
       </div>
-      <input
-        type="text"
-        id="color__code"
-        class="container__colorcode_input"
-        placeholder="ex: #ffffff"
-      />
-      <button class="color__change_btn">COLOR CHANGE</button>
+      <span class="container__color_code" id="color__code"> </span>
+
+      <button class="color__change_btn" onclick="colorChangeBtn()">COLOR CHANGE</button>
     </section>
   </body>
 </html>
