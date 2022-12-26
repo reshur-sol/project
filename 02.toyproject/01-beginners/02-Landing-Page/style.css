@@ -1,17 +1,18 @@
-/* Global */
 :root {
   /* color */
   --color-white: #ffffff;
   --color-pink: #eebed3;
-  --color-yellow: #f5dd56;
+  --color-light-yellow: #ffff8f;
+  --color-orange: #ffa500;
+  --color-azure: #f0ffff;
   --color-blue: #0171bb;
   --color-black: #000000;
 
   /* font-size */
-  --font-large: 42px;
+  --font-large: 60px;
   --font-medium: 24px;
   --font-regular: 16px;
-  --font-small: 14px;
+  --font-small: 15px;
 
   /* font-weight */
   --weight-bold: 700;
@@ -19,10 +20,11 @@
   --weight-regular: 400;
 
   /* size */
-  --border-radius: 15px;
+  --border-radius: 10px;
+  --border-btn-radius: 5px;
 }
 
-/* Universal tags */
+/* Universal */
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +33,10 @@
 }
 a {
   text-decoration: none;
+  cursor: pointer;
+  color: var(--color-black);
 }
+
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -41,27 +46,149 @@ li {
   list-style: none;
 }
 
-#navbar {
-  background-color: var(--color-pink);
+#Navbar {
+  background-color: var(--color-white);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.nav__logo {
+  width: 100px;
+  height: 50px;
 }
 .nav__menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin: 20px;
+  margin: 0 10px;
 }
 .nav__menu_item {
-  padding: 0 25px;
+  margin: 0 15px;
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  font-family: "Chivo Mono", monospace;
 }
-.nav__menu_item_contact {
+.nav__menu_item:hover {
+  color: var(--color-blue);
+}
+.nav__menu_search {
+  border-bottom: 2px solid var(--color-black);
+  margin: 0 15px;
+}
+#nav__search_bar {
+  border: none;
+  background-color: transparent;
+  font-size: var(--font-regular);
+  outline: none;
+  padding: 0 10px;
+}
+#nav__search_bar::placeholder {
+  font-family: "Chivo Mono", monospace;
+  color: var(--color-black);
+  font-size: var(--font-regular);
+}
+.nav__menu_search i {
+  cursor: pointer;
+}
+.nav__toggle_btn {
+  display: none;
+}
+/* Main */
+#Main {
+  position: relative;
+  height: 100vh;
+  background: url(images/beach.jpg) center/cover no-repeat;
+}
+.main__description {
+  position: absolute;
+  right: 150px;
+  top: 330px;
+}
+.main__title {
+  margin: 15px 0;
+  color: var(--color-white);
+}
+.main__attention {
+  color: var(--color-light-yellow);
+}
+.main__title_icon {
+  font-size: 30px;
+}
+.main__title_description {
+  font-size: var(--font-small);
+  font-weight: var(--weight-regular);
+  color: var(--color-azure);
+}
+.main__search_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main__search_input {
+  width: 350px;
+  height: 45px;
+  margin: 25px 0;
+  padding: 0 10px;
+  outline: none;
+  caret-color: var(--color-blue);
+  border: none;
+  background-color: var(--color-azure);
+}
+.main__search_btn {
   width: 100px;
-  height: 30px;
+  height: 45px;
+  border: none;
+  border-radius: var(--border-btn-radius);
+  font-size: var(--font-small);
+  font-weight: var(--weight-regular);
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  cursor: pointer;
+}
 
-  border: 1px solid var(--color-black);
-  border-radius: var(--border-radius);
-  background-color: var(--color-yellow);
+.fa-glass-citrus {
+  color: var(--color-white);
+  font-size: large;
+}
+@media screen and (max-width: 800px) {
+  .nav__toggle_btn {
+    font-size: var(--font-medium);
+    display: block;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+  #Navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__logo {
+    margin: 10px 0;
+  }
+  .nav__menu_search {
+    display: none;
+  }
+  .nav__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav__menu_item {
+    margin: 5px 0;
+  }
+  #Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  .main__description {
+    position: static;
+  }
+  .main__search_container {
+    justify-content: center;
+  }
 }
