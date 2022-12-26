@@ -89,5 +89,6 @@ li {
   }
   .navbar__toggle_btn {
     display: block;
+    cursor: pointer;
   }
 }
