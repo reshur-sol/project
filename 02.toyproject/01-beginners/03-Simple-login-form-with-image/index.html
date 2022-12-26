@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="login form with image" />
     <meta name="author" content="RESHUR" />
+    <!-- login -->
+    <meta
+      name="google-signin-client_id"
+      content="770018345527-gnau6drmi4aba34vraaig7usf51jkuse.apps.googleusercontent.com"
+    />
     <link rel="stylesheet" href="style.css" />
-    <script defer src="/script.js"></script>
+    <script async defer src="/script.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
     <title>RIBI MUSIC - Login</title>
     <!-- font and icon -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,7 +36,7 @@
         <div class="left__hr_container">
           <span><hr /></span>OR<span><hr /></span>
         </div>
-        <button class="left__google_btn">
+        <button class="left__google_btn" id="google__authorize_btn" onclick="handleAuthorize_btn()">
           <i class="fab fa-google-plus"></i>Continue with Google
         </button>
         <button class="left__fb_btn"><i class="fab fa-facebook"></i>Continue with Facebook</button>
